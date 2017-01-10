@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
+import {Divider } from 'semantic-ui-react';
 
 import RecipeList from './RecipeList';
-
-import {Divider } from 'semantic-ui-react';
 
 class Home extends Component {
   render() {
