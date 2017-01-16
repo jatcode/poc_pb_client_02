@@ -1,4 +1,4 @@
-import { fork, call, put, takeEvery, takeLatest } from 'redux-saga/effects'
+import { fork, call, put, takeEvery } from 'redux-saga/effects'
 import {browserHistory} from 'react-router';
 
 import {getRecentRecipes} from '../services/api';

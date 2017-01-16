@@ -8,13 +8,15 @@ import { Provider } from 'react-redux';
 import store, { history } from './store';
 
 const router = (
-  <Provider store= {store}>
+  <Provider store={store}>
     <Router history={history}>
-      <Route path='/' component={App}/>
-      <IndexRoute component={Home}></IndexRoute>
+      <Route path='/' component={App}>
+		<IndexRoute component={Home}>
+		</IndexRoute>
+      </Route>
     </Router>
   </Provider>
-)
+);
 
 
 ReactDOM.render(

@@ -1,19 +1,20 @@
-import React , {Component} from 'react';
-import {Link} from 'react-router';
-import {Header, Container } from 'semantic-ui-react'
+import React from 'react';
 
-class Main extends Component {
-  
+import { Link } from 'react-router';
+import { Header, Container } from 'semantic-ui-react'
+
+
+const Main = React.createClass({
   render() {
-    return(
+    return (
       <Container>
-        <Header as='h1' textAlign='center'>
-          <Link to='/'>Menu Monkey</Link>
+        <Header as="h1" textAlign="center">
+          <Link to="/">Menu Monkey</Link>
         </Header>
         {React.cloneElement(this.props.children, this.props)}
       </Container>
-    );
+    )
   }
-}
+});
 
 export default Main;

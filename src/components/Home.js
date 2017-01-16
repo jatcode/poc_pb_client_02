@@ -1,18 +1,15 @@
-import React, {Component} from 'react';
-
+import React, { Component } from 'react';
 import RecipeList from './RecipeList';
-
-import {Divider } from 'semantic-ui-react';
+import { Divider } from 'semantic-ui-react';
 
 class Home extends Component {
   render() {
-    return(
+    return (
       <div>
         <Divider />
-        <RecipeList {...this.props} />
+        <RecipeList {...this.props} /> 
       </div>
     );
-    
   }
 }
 export default Home;
